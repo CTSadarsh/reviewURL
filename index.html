@@ -1,0 +1,49 @@
+{
+    "_embedded": {
+        "reviews": [
+            {
+                "id": 1,
+                "userEmail": "example1user@email.com",
+                "date": "2022-12-22T09:26:43.000+00:00",
+                "rating": 4.0,
+                "bookId": 1,
+                "reviewDescription": "First book is pretty good book overall",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/reviews/1"
+                    },
+                    "review": {
+                        "href": "http://localhost:8080/api/reviews/1"
+                    }
+                }
+            },
+            {
+                "id": 3,
+                "userEmail": "testuser@email.com",
+                "date": "2022-12-25T10:43:05.462+00:00",
+                "rating": 3.0,
+                "bookId": 1,
+                "reviewDescription": "Very good for beginners",
+                "_links": {
+                    "self": {
+                        "href": "http://localhost:8080/api/reviews/3"
+                    },
+                    "review": {
+                        "href": "http://localhost:8080/api/reviews/3"
+                    }
+                }
+            }
+        ]
+    },
+    "_links": {
+        "self": {
+            "href": "http://localhost:8080/api/reviews/search/findByBookId?bookId=1&page=0&size=3"
+        }
+    },
+    "page": {
+        "size": 3,
+        "totalElements": 2,
+        "totalPages": 1,
+        "number": 0
+    }
+}
